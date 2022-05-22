@@ -1,0 +1,27 @@
+<body>
+    
+    <div class="col-md-12">
+       
+        <table class="table">
+            <thead class="thead-light">
+                <tr>               
+                    <th>Attendee Name</th>
+                    <th>Attendee Country</th>
+                    <th>Attendee Cities </th>
+                    <th>Attendee Marital Status </th>
+                    <th>Attendee Hobbies </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let attendee of attendees">
+                    <!-- <td >{{attendee.id}}</td> -->
+                    <td >{{attendee.name}}</td>
+                    <td >{{attendee.country }}</td>
+                    <td >{{attendee.city}}</td>
+                    <td >{{attendee.maritalStatus}}</td>
+                    <td >{{attendee.hobbies}}</td>             
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>

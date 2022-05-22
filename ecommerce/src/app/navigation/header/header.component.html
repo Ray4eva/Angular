@@ -1,0 +1,49 @@
+<!-- <mat-toolbar color="primary"> -->
+    <!-- <div fxHide.gt-xs>
+        <button mat-icon-button (click)="onToggleSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <div>
+        <a routerLink="/home">Register</a>
+    </div> -->
+    <!-- <div>
+        <ul class="d-flex justify-content-center radio-inline">
+            <li class="mx-3">
+                <a [routerLink]="['/register']">Register</a>
+            </li>
+            <li class="mx-3">
+                <a [routerLink]="['/attendees']">Attendees</a>
+            </li>
+            <li class="mx-3">
+                <a [routerLink]="['/Ecommerce']">Ecommerce</a>
+            </li>
+            
+        </ul>
+    </div>
+  </mat-toolbar> -->
+
+
+  <mat-toolbar color="primary">
+    <div fxHide.gt-xs>
+        <button mat-icon-button (click)="onToggleSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <div>
+        <a routerLink="/home">E-Commerce Home</a>
+    </div>
+    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+        <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+            <li>
+                <a [routerLink]="['/register']">Register</a>
+            </li>
+            <li>
+                <a [routerLink]="['/attendees']">Attendees</a>
+            </li>
+            <li>
+                <a [routerLink]="['/Ecommerce']">Ecommerce</a>
+            </li>
+        </ul>
+    </div>
+  </mat-toolbar>

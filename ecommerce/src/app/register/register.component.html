@@ -1,0 +1,41 @@
+<body>
+    <div class="container-fluid">
+        <div class="jumbtron py-3">
+          <h1 class="display-7 text-center">Attendance Registration</h1>
+        </div>
+        <form [formGroup] = "registerForm">
+            <div class="form-group col-4">
+              <label>Name</label>
+              <input formControlName = "name" class="form-control" type="text"
+               >
+            </div>
+            <br>
+            <div class="form-group col-4">
+              <label>Country</label>
+              <input formControlName ="country"  class="form-control" type="text">
+            </div>
+            <br>
+            <div class="form-group col-4">
+              <label>City</label>
+              <input formControlName = "city" class="form-control" type="text">
+            </div>
+            <br>
+            <div class="form-group col-4">
+              <label>Marital Status</label>
+              <input formControlName = "maritalStatus" class="form-control" type="text">
+            </div>
+            <br>
+            <div class="form-group col-4">
+              <label>Hobbies</label>
+              <input formControlName = "hobbies" class="form-control" type="text">
+            </div>
+            <br>
+            <div>
+              <button class="btn btn-info btn-block btn-primary col-4" type="submit" (click)="save(registerForm)">Submit</button>
+            </div>
+            <br>
+          </form>
+          </div>
+          
+
+</body>

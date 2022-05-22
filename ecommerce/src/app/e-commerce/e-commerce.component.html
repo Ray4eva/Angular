@@ -1,0 +1,30 @@
+<body>
+
+    
+    <div class="col-md-12">
+       
+       
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    
+                    <th>Product Name</th>
+                    <th>Product Year</th>
+                    <th>Product Color </th>
+                    <th>Product Pantone Value </th>
+                </tr>
+            </thead>
+            <tbody>
+              
+                <tr *ngFor = "let product of products.data">
+                     <!-- <td >{{product.id}}</td> -->
+                     <td >{{product.name}}</td>
+                    <td >{{product.year}}</td>
+                    <td >{{product.color}}</td>
+                    <td >{{product.pantone_value}}</td>
+                    
+                </tr> 
+            </tbody>
+        </table>
+    </div>
+</body>
